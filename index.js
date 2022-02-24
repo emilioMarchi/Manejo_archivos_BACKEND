@@ -28,7 +28,9 @@ product.then(async(res)=>{
 .then((res)=>{
     console.log(res)
     if(res){
-        container.deleteById(res.id)
+        setTimeout(()=>{
+            container.deleteById(res.id)
+        }, 1000)
     }else{}
 })
 .then(()=>{
